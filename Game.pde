@@ -1,10 +1,10 @@
 
 int xOffset = 175;
 int yOffset = 175;
-int numRows = 7; //25 default, 12 is minimum unless start point changes
-int numCols = 7; //25 default
+int numRows = 25; //25 default, 12 is minimum unless start point changes
+int numCols = 25; //25 default
 int squareWidth = 25;
-boolean useAI = true;
+boolean useAI = false;
 AI ai;
 
 Board board;
@@ -21,7 +21,7 @@ enum GameState {
 
 void setup()
 {
-  frameRate(60);
+  frameRate(10);
   size(1000, 1000);
   background(0);
   snek = new Snake();
